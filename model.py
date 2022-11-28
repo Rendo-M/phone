@@ -1,12 +1,3 @@
-from dataclasses import dataclass
-
-@dataclass
-class Record:
-    number: str
-    first : str
-    sur   : str=''
-    last  : str=''
-    comment: str=''
 
 
 

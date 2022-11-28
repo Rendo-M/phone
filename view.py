@@ -15,11 +15,6 @@ class View:
     def get_answer(self, ask='--> '):
         return input(ask)
 
-    def get_record(self, structure: list):
-        record = list()
-        for i in structure:
-            record.append(input(f'{i}--> '))
-        return tuple(record)
             
     def show_records(self, records):
         for record in records:
@@ -27,6 +22,8 @@ class View:
                 print(f'{value}', end=' \t')
             print()
 
+    def out(self, value):
+        print(value)
 
 def main():
     pass                

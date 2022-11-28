@@ -10,12 +10,7 @@ def from_csv(file_name='tel.csv') -> list:
     except:
         return []
     
-ds = pandas.DataFrame(from_csv())    
-records = []
-for i in range(len(ds)):
-    res = []
-    for j in ds.loc[i]:
-        res.append(j)
-    records.append(tuple(res))    
-print(records)    
+ds = pandas.ExcelFile('tel.xlsx').parse('Sheet1')  
+
+print(ds)    
 
