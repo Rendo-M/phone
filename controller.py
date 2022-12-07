@@ -8,7 +8,7 @@ class Controller:
     actions = ['0 - Загрузить', '1 - Сохранить', '2 - Просмотреть', '3 - Добавить', 
         '4 - Настройки','5 - Поиск', '6 - Удалить', '7 - Выход']
 
-    def __init__(self, file_name = 'tel', mode = 0):
+    def __init__(self, file_name = 'empl', mode = 0):
 
         self.view = view.View(self.actions)
         self.model = model2.Phone_booK()

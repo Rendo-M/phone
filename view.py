@@ -16,11 +16,11 @@ class View:
         return input(ask)
 
             
-    def show_records(self, records):
-        for record in records:
-            for value in record:
-                print(f'{value}', end=' \t')
-            print()
+    # def show_records(self, records):
+    #     for record in records:
+    #         for value in record:
+    #             print(f'{value}', end=' \t')
+    #         print()
 
     def out(self, value):
         print(value)
